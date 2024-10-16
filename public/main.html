@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe XYZ - Online Ordering</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Comfy Cafe - Roasting Freshly</h1>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2>What do you want to have today?</h2>
+
+      <!-- Coffee Section -->
+      <h3>Hot Drinks</h3>
+      <div class="menu-items">
+        <div class="menu-item" data-id="1">
+          <img src="images/flatwhite.jpeg" alt="Flat White">
+          <h4>Flat White</h4>
+          <p>$5.5</p>
+          <button onclick="addToCart(1, 'Flat White', 5.5)">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-id="2">
+          <img src="images/latte.jpg" alt="Latte">
+          <h4>Latte</h4>
+          <p>$5.5</p>
+          <button onclick="addToCart(2, 'Latte', 5.5)">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-id="3">
+          <img src="images/longblack.jpg" alt="Long Black">
+          <h4>Long Black</h4>
+          <p>$4.0</p>
+          <button onclick="addToCart(3, 'Long Black', 4.0)">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-id="4">
+          <img src="images/hotchoc.jpg" alt="Hot Chocolate">
+          <h4>Hot Chocolate</h4>
+          <p>$6.0</p>
+          <button onclick="addToCart(4, 'Hot Chocolate', 6.0)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Dessert Section -->
+      <h3>Others</h3>
+      <div class="menu-items">
+        <div class="menu-item" data-id="5">
+          <img src="images/blueberrycheesecake.jpg" alt="Blueberry Cheesecake">
+          <h4>Blueberry Cheesecake</h4>
+          <p>$8.0</p>
+          <button onclick="addToCart(5, 'Blueberry Cheesecake', 8.0)">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-id="6">
+          <img src="images/frangipane.jpg" alt="Frangipane">
+          <h4>Frangipane</h4>
+          <p>$7.0</p>
+          <button onclick="addToCart(6, 'Frangipane', 7.0)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <div id="cart-total">
+        <strong>Total: $<span id="total-amount">0.00</span></strong>
+      </div>
+      <button id="checkout-btn">Checkout</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Comfy Cafe</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

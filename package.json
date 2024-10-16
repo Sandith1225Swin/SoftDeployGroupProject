@@ -1,0 +1,15 @@
+{
+    "name": "cafe-ordering-app",
+    "version": "1.0.0",
+    "description": "A web application for online cafe ordering.",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.21.1"
+    }
+}
